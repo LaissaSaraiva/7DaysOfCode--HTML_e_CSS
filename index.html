@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>7daysOfCode--HTML_e_CSS</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="./assets/images/logo.svg" alt="Logo da OptimusTech">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Recursos</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-      <button>Entrar</button>
-      <button>Cadastrar</button>
-    </nav>
-  </header>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7daysOfCode--HTML_e_CSS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="menu menu__flex">
+        <img
+          class="menu__logo"
+          src="./assets/images/logo.svg"
+          alt="Logo da OptimusTech"
+        />
+        <ul class="menu__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+        <div class="menu__botao">
+          <button class="btn">Entrar</button>
+          <button class="btn--vermelho">Cadastrar</button>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
