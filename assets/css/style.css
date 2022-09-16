@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--branco-principal);
+  width:100%;
 }
 
 a {
@@ -26,7 +27,7 @@ button {
   border-radius: 8px;
   border: none;
   padding: 10px 18px;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -35,7 +36,6 @@ button {
 
 .menu {
   height: 80px;
-
   padding: 0px 32px;
 }
 .menu__flex {
@@ -77,4 +77,34 @@ button {
 .btn--vermelho {
   background-color: var(--vermelho-principal);
   color: var(--branco-principal);
+}
+
+/* Seção Cabeçalho - Dia 02 de 07  */
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:24px;
+  padding: 96px 0;
+  text-align: center;
+  margin: auto 0;
+}
+
+.cabecalho span {
+  color: var(--vermelho-principal);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cabecalho h1 {
+  font-size: 3rem;
+  padding: 0 32px;
+}
+
+.cabecalho p {
+  color: var(--cinza-claro);
+  padding-top: 12px;
+  font-size: 1.25rem;
+  max-width:792px;
 }
