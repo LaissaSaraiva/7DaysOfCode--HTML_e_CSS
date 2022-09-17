@@ -13,9 +13,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   background-color: var(--branco-principal);
-  width:100%;
+  width: 100vw;
 }
 
 a {
@@ -85,7 +86,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:24px;
+  gap: 24px;
   padding: 96px 0;
   text-align: center;
   margin: auto 0;
@@ -106,5 +107,39 @@ button {
   color: var(--cinza-claro);
   padding-top: 12px;
   font-size: 1.25rem;
-  max-width:792px;
+  max-width: 792px;
+}
+
+/* Seção Métricas - Dia 03 de 07  */
+
+.metricas {
+  padding-bottom: 96px;
+}
+
+.metricas__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  margin: 0 112px;
+}
+
+.metricas__item {
+  width: 300px;
+  text-align: left;
+}
+
+.metricas__item span {
+  color: var(--vermelho-principal);
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.metricas__item h3 {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 8px;
+}
+
+.metricas__item p {
+  color: var(--cinza-claro);
 }
