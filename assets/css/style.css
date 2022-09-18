@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--cinza-claro);
+}
+
 button {
   height: 44px;
   border-radius: 8px;
@@ -104,7 +108,6 @@ button {
 }
 
 .cabecalho p {
-  color: var(--cinza-claro);
   padding-top: 12px;
   font-size: 1.25rem;
   max-width: 792px;
@@ -140,6 +143,36 @@ button {
   margin-bottom: 8px;
 }
 
-.metricas__item p {
-  color: var(--cinza-claro);
+/* Seção com imagem - Dia 04 de 07  */
+
+.vagas {
+  text-align: center;
+  padding: 96px 0;
+  /* line-height: 44px; */
+}
+
+.vagas__talentos {
+  margin: auto 0;
+}
+.vagas__talentos span {
+  color: var(--vermelho-principal);
+  background-color: #f9f4f4;
+  padding: 5px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.vagas__talentos h2 {
+  font-size: 36px;
+  margin: 16px 0;
+}
+
+.vagas__talentos p {
+  font-size: 20px;
+}
+
+.vagas__imagem img {
+  margin-top: 3rem;
+  width: 80%;
 }
