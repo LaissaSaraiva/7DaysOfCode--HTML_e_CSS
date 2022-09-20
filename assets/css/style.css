@@ -178,7 +178,7 @@ button {
   font-size: 20px;
 }
 
-.vagas__imagem img {
+.vagas__talentos img {
   margin-top: 3rem;
   width: 80%;
 }
@@ -188,7 +188,8 @@ button {
 .vagas__container {
   text-align: left;
   margin: 0 auto;
-  width: 768px;
+  /* width: 768px; */
+  min-width: 55%;
   padding: 0 32px;
 
   display: flex;
