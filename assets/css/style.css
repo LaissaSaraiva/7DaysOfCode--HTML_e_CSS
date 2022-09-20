@@ -1,9 +1,11 @@
 :root {
   --branco-principal: #ffffff;
   --vermelho-principal: #8e2424;
+  --vermelho-secundario: rgba(195, 25, 25, 0.3);
   --preto-principal: #000000;
   --cinza-escuro: #3a404e;
   --cinza-claro: #667085;
+  --cinza-bordas: #EAECF0;
 }
 
 * {
@@ -197,11 +199,11 @@ button {
 .vagas__container h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .vagas__card {
-  border: solid 0.5px var(--cinza-claro);
+  border: solid 1px var(--cinza-bordas);
   border-radius: 10px;
   padding: 24px 24px 28px 24px;
 }
@@ -215,4 +217,43 @@ button {
 .vagas__detalhes span {
   color: var(--cinza-claro);
   margin-right: 24px;
+}
+
+
+/* Seção de Depoimentos - Dia 06 de 07  */
+
+.depoimentos__container {
+  background-color: #FDF8F8;
+  border-radius: 16px;
+  padding: 64px;
+  text-align: center;
+  margin: 0 auto 96px;
+  width: 90%;
+}
+
+.depoimentos__span {
+  color: var(--vermelho-principal);
+  font-weight: bold;
+}
+
+.depoimentos__container h1 {
+  margin-top: 16px;
+  font-size: 2.25rem;
+}
+
+.depoimentos__card {
+  margin-top: 32px;
+}
+
+.depoimentos__card img {
+  margin-bottom: 16px;
+}
+
+.depoimentos__card h4 {
+  margin: 4px;;
+}
+
+.depoimentos__card span {
+  color: var(--cinza-claro);
+  font-size: 14px;
 }
