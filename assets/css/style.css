@@ -89,30 +89,33 @@ button {
 /* Seção Cabeçalho - Dia 02 de 07  */
 
 .cabecalho {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 96px 0;
+  padding: 96px 30px;
   text-align: center;
-  margin: auto 0;
 }
 
-.cabecalho span {
+.cabecalho__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 792px;
+}
+
+.cabecalho__container span {
   color: var(--vermelho-principal);
   font-weight: bold;
   font-size: 1rem;
 }
 
-.cabecalho h1 {
+.cabecalho__container h1 {
   font-size: 3rem;
   padding: 0 32px;
 }
 
-.cabecalho p {
+.cabecalho__container p {
   padding-top: 12px;
   font-size: 1.25rem;
-  max-width: 792px;
+  /* max-width: 792px; */
 }
 
 /* Seção Métricas - Dia 03 de 07  */
