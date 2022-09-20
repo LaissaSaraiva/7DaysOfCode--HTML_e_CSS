@@ -148,12 +148,16 @@ button {
 .vagas {
   text-align: center;
   padding: 96px 0;
-  /* line-height: 44px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .vagas__talentos {
   margin: auto 0;
 }
+
 .vagas__talentos span {
   color: var(--vermelho-principal);
   background-color: #f9f4f4;
@@ -175,4 +179,40 @@ button {
 .vagas__imagem img {
   margin-top: 3rem;
   width: 80%;
+}
+
+/* Seção de vagas - Dia 05 de 07  */
+
+.vagas__container {
+  text-align: left;
+  margin: 0 auto;
+  width: 768px;
+  padding: 0 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vagas__container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.vagas__card {
+  border: solid 0.5px var(--cinza-claro);
+  border-radius: 10px;
+  padding: 24px 24px 28px 24px;
+}
+
+.vagas__titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.vagas__detalhes span {
+  color: var(--cinza-claro);
+  margin-right: 24px;
 }
