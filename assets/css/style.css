@@ -127,8 +127,9 @@ button {
 .metricas__container {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
-  margin: 0 112px;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .metricas__item {
@@ -160,7 +161,8 @@ button {
 }
 
 .vagas__talentos {
-  margin: auto 0;
+  margin: 0 auto;
+
 }
 
 .vagas__talentos span {
