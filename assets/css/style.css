@@ -5,7 +5,10 @@
   --preto-principal: #000000;
   --cinza-escuro: #3a404e;
   --cinza-claro: #667085;
-  --cinza-bordas: #EAECF0;
+  --cinza-bordas: #eaecf0;
+  --cinza-footer: #98a2b3;
+  --cinza-input:#D0D5DD;
+  --azul-background: #f9fafb;
 }
 
 * {
@@ -162,7 +165,6 @@ button {
 
 .vagas__talentos {
   margin: 0 auto;
-
 }
 
 .vagas__talentos span {
@@ -225,11 +227,10 @@ button {
   margin-right: 24px;
 }
 
-
 /* Seção de Depoimentos - Dia 06 de 07  */
 
 .depoimentos__container {
-  background-color: #FDF8F8;
+  background-color: #fdf8f8;
   border-radius: 16px;
   padding: 64px;
   text-align: center;
@@ -256,10 +257,62 @@ button {
 }
 
 .depoimentos__card h4 {
-  margin: 4px;;
+  margin: 4px;
 }
 
 .depoimentos__card span {
   color: var(--cinza-claro);
   font-size: 14px;
+}
+
+/* Seção Rodapé - Dia 07 de 07  */
+
+.footer {
+  padding: 96px 0;
+  background-color: var(--azul-background);
+  text-align: center;
+}
+
+.footer__container {
+  margin: 0 auto 32px;
+  width: 80%;
+}
+
+.footer__container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer__container p {
+  font-size: 20px;
+}
+
+.footer__form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__form input {
+  height: 48px;
+  width: 360px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--cinza-input);
+  font-size: 16px;
+}
+
+.footer__form button {
+  background-color: var(--vermelho-principal);
+  color: var(--branco-principal);
+  height: 48px;
+  width: 116px;
+}
+
+.footer span {
+  font-size: 16px;
+  color: var(--cinza-footer);
 }
