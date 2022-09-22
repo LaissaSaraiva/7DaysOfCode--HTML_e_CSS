@@ -92,7 +92,7 @@ button {
 /* Seção Cabeçalho - Dia 02 de 07  */
 
 .cabecalho {
-  padding: 96px 30px;
+  padding: 96px 32px;
   text-align: center;
 }
 
@@ -112,24 +112,23 @@ button {
 
 .cabecalho__container h1 {
   font-size: 3rem;
-  padding: 0 32px;
 }
 
 .cabecalho__container p {
   padding-top: 12px;
   font-size: 1.25rem;
-  /* max-width: 792px; */
 }
 
 /* Seção Métricas - Dia 03 de 07  */
 
 .metricas {
-  padding-bottom: 96px;
+  padding: 0px 32px 96px;
 }
 
 .metricas__container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2rem;
   margin: 0 auto;
   width: 90%;
@@ -156,7 +155,7 @@ button {
 
 .vagas {
   text-align: center;
-  padding: 96px 0;
+  padding: 96px 32px;
 
   display: flex;
   flex-direction: column;
@@ -197,8 +196,6 @@ button {
   margin: 0 auto;
   /* width: 768px; */
   min-width: 55%;
-  padding: 0 32px;
-
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -222,19 +219,28 @@ button {
   margin-bottom: 32px;
 }
 
+.vagas__detalhes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .vagas__detalhes span {
   color: var(--cinza-claro);
-  margin-right: 24px;
 }
 
 /* Seção de Depoimentos - Dia 06 de 07  */
+
+.depoimentos {
+  padding-bottom:96px;
+}
 
 .depoimentos__container {
   background-color: #fdf8f8;
   border-radius: 16px;
   padding: 64px;
   text-align: center;
-  margin: 0 auto 96px;
+  margin: 0 auto;
   width: 90%;
 }
 
@@ -243,9 +249,11 @@ button {
   font-weight: bold;
 }
 
-.depoimentos__container h1 {
-  margin-top: 16px;
-  font-size: 2.25rem;
+.depoimento__colaboradora{
+   margin-top: 16px;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--preto-principal);
 }
 
 .depoimentos__card {
@@ -256,8 +264,10 @@ button {
   margin-bottom: 16px;
 }
 
-.depoimentos__card h4 {
+.depoimentos__card p {
   margin: 4px;
+  color: var(--preto-principal);
+  font-weight: bold;
 }
 
 .depoimentos__card span {
@@ -268,14 +278,13 @@ button {
 /* Seção Rodapé - Dia 07 de 07  */
 
 .footer {
-  padding: 96px 0;
+  padding: 96px 32px;
   background-color: var(--azul-background);
   text-align: center;
 }
 
 .footer__container {
   margin: 0 auto 32px;
-  width: 80%;
 }
 
 .footer__container h1 {
@@ -316,3 +325,62 @@ button {
   font-size: 16px;
   color: var(--cinza-footer);
 }
+
+
+/* Dia 08  - Responsividade */
+
+@media (max-width: 768px) {
+
+  /*  Menu Nav */
+  .menu {
+    display: none ;
+  }
+
+  /* Seção Cabeçalho */
+  .cabecalho__container h1 {
+    font-size: 2rem;
+  }
+  
+  .cabecalho__container p {
+    text-align: justify;
+  }
+
+  /* Seção Métricas */
+  .metricas__container {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .metricas__item p {
+    text-align: justify;
+  }
+  
+  /* Seção Vagas */
+  .vagas__talentos img {
+    width: 100%;
+  }
+
+  /* Seção Depoimentos */
+  .depoimentos {
+    padding: 0 32px 96px;
+  }
+
+  .depoimentos__container {
+    padding: 10%;
+  }
+
+  .depoimentos__span {
+  font-size: smaller;
+  }
+
+  .depoimento__colaboradora {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
+  /* Seção Footer */
+  .footer__container h1 {
+    font-size: 1.8rem;
+  }
+} 
