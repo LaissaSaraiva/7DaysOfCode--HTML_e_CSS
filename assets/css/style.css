@@ -77,15 +77,15 @@ button:hover {
 }
 
 .menu a {
+  display: block;
+  padding: 0.5rem;
   color: var(--cinza-claro);
   letter-spacing: 1.5px;
 }
 
 .menu__links li a:hover {
   font-weight: bold;
-  text-decoration: underline;
-  color: var(--vermelho-principal);
-  text-shadow: var(--vermelho-secundario) 1px 0px 0px; 
+  background: rgba(142, 36, 36, 0.1); 
 }
 
 .menu__botao {
