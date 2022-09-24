@@ -25,16 +25,8 @@ body {
   height: 100%;
 }
 
-a {
+a:link {
   text-decoration: none;
-}
-
-li a:hover {
-  font-weight: bold;
-  color: var(--vermelho-principal);
-  border-bottom: var(--vermelho-secundario) solid 2px;
-  text-shadow: var(--vermelho-secundario) 1px 0px 0px;
- 
 }
 
 p {
@@ -87,6 +79,13 @@ button:hover {
 .menu a {
   color: var(--cinza-claro);
   letter-spacing: 1.5px;
+}
+
+.menu__links li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--vermelho-principal);
+  text-shadow: var(--vermelho-secundario) 1px 0px 0px; 
 }
 
 .menu__botao {
@@ -345,6 +344,27 @@ button:hover {
 .footer span {
   font-size: 16px;
   color: var(--cinza-footer);
+}
+
+.footer__creditos {
+margin: 32px auto 0;
+}
+
+.footer__creditos span {
+  font-size: smaller;
+  color: var(--cinza-claro);
+}
+
+.footer__creditos a:visited {
+  color: var(--vermelho-secundario);
+}
+
+.footer__creditos a:hover{
+  font-weight:bold;
+}
+
+.footer__creditos a:active{
+  color: var(--vermelho-principal);
 }
 
 /* Dia 08  - Responsividade */
