@@ -7,7 +7,7 @@
   --cinza-claro: #667085;
   --cinza-bordas: #eaecf0;
   --cinza-footer: #98a2b3;
-  --cinza-input:#D0D5DD;
+  --cinza-input: #d0d5dd;
   --azul-background: #f9fafb;
 }
 
@@ -21,11 +21,20 @@
 html,
 body {
   background-color: var(--branco-principal);
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bold;
+  color: var(--vermelho-principal);
+  border-bottom: var(--vermelho-secundario) solid 2px;
+  text-shadow: var(--vermelho-secundario) 1px 0px 0px;
+ 
 }
 
 p {
@@ -40,6 +49,15 @@ button {
   font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
+  background-color: var(--vermelho-principal);
+  color: var(--branco-principal);
+  height: 48px;
+  width: 116px;
+}
+
+button:hover {
+  background-color: var(--cinza-escuro);
+  box-shadow: var(--cinza-claro) 1px 1px 1px;
 }
 
 /* Cabeçalho - Dia 01 de 07 */
@@ -82,6 +100,11 @@ button {
 .btn {
   background-color: var(--branco-principal);
   color: var(--cinza-claro);
+}
+
+.btn:hover {
+  background-color: var(--branco-principal);
+  border: var(--vermelho-secundario) solid 1px;
 }
 
 .btn--vermelho {
@@ -232,7 +255,7 @@ button {
 /* Seção de Depoimentos - Dia 06 de 07  */
 
 .depoimentos {
-  padding-bottom:96px;
+  padding-bottom: 96px;
 }
 
 .depoimentos__container {
@@ -249,8 +272,8 @@ button {
   font-weight: bold;
 }
 
-.depoimento__colaboradora{
-   margin-top: 16px;
+.depoimento__colaboradora {
+  margin-top: 16px;
   font-size: 36px;
   font-weight: bold;
   color: var(--preto-principal);
@@ -314,11 +337,9 @@ button {
   font-size: 16px;
 }
 
-.footer__form button {
-  background-color: var(--vermelho-principal);
-  color: var(--branco-principal);
-  height: 48px;
-  width: 116px;
+.footer__form input[type="email"]:focus {
+  outline: none;
+  border: 2px solid var(--vermelho-principal);
 }
 
 .footer span {
@@ -326,21 +347,19 @@ button {
   color: var(--cinza-footer);
 }
 
-
 /* Dia 08  - Responsividade */
 
 @media (max-width: 768px) {
-
   /*  Menu Nav */
   .menu {
-    display: none ;
+    display: none;
   }
 
   /* Seção Cabeçalho */
   .cabecalho__container h1 {
     font-size: 2rem;
   }
-  
+
   .cabecalho__container p {
     text-align: justify;
   }
@@ -349,13 +368,12 @@ button {
   .metricas__container {
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
   .metricas__item p {
     text-align: justify;
   }
-  
+
   /* Seção Vagas */
   .vagas__talentos img {
     width: 100%;
@@ -371,7 +389,7 @@ button {
   }
 
   .depoimentos__span {
-  font-size: smaller;
+    font-size: smaller;
   }
 
   .depoimento__colaboradora {
@@ -383,4 +401,4 @@ button {
   .footer__container h1 {
     font-size: 1.8rem;
   }
-} 
+}
