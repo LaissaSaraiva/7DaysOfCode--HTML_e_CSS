@@ -457,6 +457,7 @@ margin: 32px auto 0;
 
   .cabecalho__container p {
     text-align: justify;
+    padding: 0 10%;
   }
 
   /* Seção Métricas */
